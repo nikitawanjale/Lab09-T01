@@ -31,11 +31,11 @@ int main(void)
 
     fRadians = ((2 * M_PI) / SERIES_LENGTH);
 
-    /*This loop will calculate the sine value for each of the 100 values of the
+    /*This loop will calculate the cosine value for each of the 100 values of the
   	  angle and place them in our data array*/
     while(i32DataCount < SERIES_LENGTH)
     {
-    	gSeriesData[i32DataCount] = sinf(fRadians * i32DataCount);
+    	gSeriesData[i32DataCount] = cosf(fRadians * i32DataCount);
 
     	i32DataCount++;
     }
